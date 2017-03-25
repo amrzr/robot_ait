@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find robot_ait)/launch/driver.launch" />
+  <include file="$(find robot_ait)/launch/slam.launch" />
+  <include file="$(find robot_ait)/launch/urdf.launch"/>
+
+  <node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" launch-prefix="xterm -e"/>
+   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find robot_ait)/launch/rviz/mapping.rviz"/>
+  
+</launch>
