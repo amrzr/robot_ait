@@ -1,0 +1,4 @@
+<launch>
+ <node name="dyanamic_reconfigure_load" pkg="dynamic_reconfigure" type="dynparam" args="set /camera/driver depth_registration True"/>
+ <node name="object_recogintion_load" pkg="object_recognition_core" type="detection" args="-c $(find object_recognition_linemod)/conf/detection.ros.ork" />
+</launch>

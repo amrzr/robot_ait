@@ -4,7 +4,7 @@
 
     <arg name="camera" default="camera" />
     <arg name="scan_topic" default="scan"/>
-    <arg name="depth" default="depth"/>
+    <arg name="depth" default="depth_registered"/>
 
     <!-- start sensor-->
     <include file="$(find openni_launch)/launch/openni.launch">

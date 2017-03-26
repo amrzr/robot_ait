@@ -12,8 +12,8 @@ TrajectoryPlannerROS:
   acc_lim_x: 1.0
   acc_lim_y: 0.0
 
-  yaw_goal_tolerance: 0.5
-  xy_goal_tolerance: 0.15
+  yaw_goal_tolerance: 4
+  xy_goal_tolerance: 0.1
 
   sim_time: 3.0
   vx_samples: 20
